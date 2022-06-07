@@ -4,292 +4,189 @@ import java.util.Scanner;
 
 public class Number {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int number = 0;
-        System.out.println("Input Number: ");
-        while (number >= 0 && number < 1000) {
-            number = Integer.parseInt(scanner.nextLine());
-            String str = "";
-            String str1 = "";
-            String str2 = "";
-            int tens = number / 10;
-            int ones = number % 10;
-
-            if (number <= 10) {
-                switch (number) {
-                    case 0:
-                        str = "zero";
-                        break;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Number:");
+        int number = sc.nextInt();
+        int number1 = number / 100;
+        int number2 = (number % 100) / 10;
+        int number3 = (number % 100) % 10;
+        if (number > 0) {
+            if (number > 100) {
+                switch (number1) {
                     case 1:
-                        str = "one";
+                        System.out.print("one hundred ");
                         break;
                     case 2:
-                        str = "two";
+                        System.out.print("two hundred ");
                         break;
                     case 3:
-                        str = "three";
+                        System.out.print("three hundred ");
                         break;
                     case 4:
-                        str = "four";
+                        System.out.print("four hundred ");
                         break;
                     case 5:
-                        str = "five";
+                        System.out.print("five hundred ");
                         break;
                     case 6:
-                        str = "six";
+                        System.out.print("six hundred ");
                         break;
                     case 7:
-                        str = "seven";
+                        System.out.print("seven hundred ");
                         break;
                     case 8:
-                        str = "eight";
+                        System.out.print("eight hundred ");
                         break;
                     case 9:
-                        str = "nine";
-                        break;
-                    case 10:
-                        str = "ten";
-                        break;
-                    default:
-                        str = "";
-                }
-                System.out.println(str);
-            } else if (number < 20) {
-                switch (number) {
-                    case 11:
-                        str = "eleven";
-                        break;
-                    case 12:
-                        str = "twelve";
-                        break;
-                    case 13:
-                        str = "thirteen";
-                        break;
-                    case 14:
-                        str = "fourteen";
-                        break;
-                    case 15:
-                        str = "fifteen";
-                        break;
-                    case 16:
-                        str = "sixteen";
-                        break;
-                    case 17:
-                        str = "seventeen";
-                        break;
-                    case 18:
-                        str = "eighteen";
-                        break;
-                    case 19:
-                        str = "nineteen";
-                        break;
-
-                    default:
-                        str = "";
-                }
-                System.out.println(str);
-            } else if (number < 100) {
-                switch (tens) {
-                    case 2:
-                        str1 = "twenty";
-                        break;
-                    case 3:
-                        str1 = "thirty";
-                        break;
-                    case 4:
-                        str1 = "fourty";
-                        break;
-                    case 5:
-                        str1 = "fifty";
-                        break;
-                    case 6:
-                        str1 = "sixty";
-                        break;
-                    case 7:
-                        str1 = "seventy";
-                        break;
-                    case 8:
-                        str1 = "eighty";
-                        break;
-                    case 9:
-                        str1 = "ninety";
+                        System.out.print("nine hundred ");
                         break;
                 }
-                switch (ones) {
-                    case 1:
-                        str2 = "one";
-                        break;
-                    case 2:
-                        str2 = "two";
-                        break;
-                    case 3:
-                        str2 = "three";
-                        break;
-                    case 4:
-                        str2 = "four";
-                        break;
-                    case 5:
-                        str2 = "five";
-                        break;
-                    case 6:
-                        str2 = "six";
-                        break;
-                    case 7:
-                        str2 = "seven";
-                        break;
-                    case 8:
-                        str2 = "eight";
-                        break;
-                    case 9:
-                        str2 = "nine";
-                        break;
-                    default:
-                        str2 = "";
-                }
-                if (ones == 0) {
-                    System.out.println(str1);
-                } else System.out.println(str1 + " " + str2);
-            } else if (number < 1000) {
-                int tens1 = number % 100 / 10;
-                int ones1 = number % 100 % 10;
-                int huns = number / 100;
-                switch (huns) {
-                    case 1:
-                        str = "one";
-                        break;
-                    case 2:
-                        str = "two";
-                        break;
-                    case 3:
-                        str = "three";
-                        break;
-                    case 4:
-                        str = "four";
-                        break;
-                    case 5:
-                        str = "five";
-                        break;
-                    case 6:
-                        str = "six";
-                        break;
-                    case 7:
-                        str = "seven";
-                        break;
-                    case 8:
-                        str = "eight";
-                        break;
-                    case 9:
-                        str = "nine";
-                        break;
-
-                    default:
-                        str = "";
-                }
-                switch (tens1) {
-                    case 2:
-                        str1 = "twenty";
-                        break;
-                    case 3:
-                        str1 = "thirty";
-                        break;
-                    case 4:
-                        str1 = "fourty";
-                        break;
-                    case 5:
-                        str1 = "fifty";
-                        break;
-                    case 6:
-                        str1 = "sixty";
-                        break;
-                    case 7:
-                        str1 = "seventy";
-                        break;
-                    case 8:
-                        str1 = "eighty";
-                        break;
-                    case 9:
-                        str1 = "ninety";
-                        break;
-                }
-                switch (ones1) {
-                    case 1:
-                        str2 = "one";
-                        break;
-                    case 2:
-                        str2 = "two";
-                        break;
-                    case 3:
-                        str2 = "three";
-                        break;
-                    case 4:
-                        str2 = "four";
-                        break;
-                    case 5:
-                        str2 = "five";
-                        break;
-                    case 6:
-                        str2 = "six";
-                        break;
-                    case 7:
-                        str2 = "seven";
-                        break;
-                    case 8:
-                        str2 = "eight";
-                        break;
-                    case 9:
-                        str2 = "nine";
-                        break;
-
-                    default:
-                        str2 = "";
-                }
-
-                if (ones1 == 0 && tens1 == 0) {
-                    System.out.println(str + " hundred");
-                } else if (tens1 == 1) {
-                    int tens2 = number % 100;
-                    switch (tens2) {
-                        case 10:
-                            str2 = "ten";
+                if ((number % 100) > 10 && (number % 100) < 20) {
+                    switch (number3) {
+                        case 1:
+                            System.out.println("eleven");
                             break;
-                        case 11:
-                            str2 = "eleven";
+                        case 2:
+                            System.out.println("twelve");
                             break;
-                        case 12:
-                            str2 = "twelve";
+                        case 3:
+                            System.out.println("thirteen");
                             break;
-                        case 13:
-                            str2 = "thirteen";
+                        case 4:
+                            System.out.println("fourteen");
                             break;
-                        case 14:
-                            str2 = "fourteen";
+                        case 5:
+                            System.out.println("fifteen");
                             break;
-                        case 15:
-                            str2 = "fifteen";
+                        case 6:
+                            System.out.println("sixteen");
                             break;
-                        case 16:
-                            str2 = "sixteen";
+                        case 7:
+                            System.out.println("seventeen");
                             break;
-                        case 17:
-                            str2 = "seventeen";
+                        case 8:
+                            System.out.println("eighteen");
                             break;
-                        case 18:
-                            str2 = "eighteen";
+                        case 9:
+                            System.out.println("nineteen");
                             break;
-                        case 19:
-                            str2 = "nineteen";
-                            break;
-
-                        default:
-                            str = "";
                     }
-                    System.out.println(str + " hundred and " + str2);
-                } else
-                    System.out.println(str + " hundred and " + str1 + " " + str2);
+                } else {
+                    switch (number2) {
+                        case 1:
+                            System.out.print("ten");
+                            break;
+                        case 2:
+                            System.out.print("tewnty ");
+                            break;
+                        case 3:
+                            System.out.print("thirty ");
+                            break;
+                        case 4:
+                            System.out.print("forty ");
+                            break;
+                        case 5:
+                            System.out.print("fifty ");
+                            break;
+                        case 6:
+                            System.out.print("sixty ");
+                            break;
+                        case 7:
+                            System.out.print("seventy ");
+                            break;
+                        case 8:
+                            System.out.print("eighty ");
+                            break;
+                        case 9:
+                            System.out.print("nine ");
+                            break;
+
+                    }
+                    switch (number3) {
+                        case 1:
+                            System.out.println("one");
+                            break;
+                        case 2:
+                            System.out.println("two");
+                            break;
+                        case 3:
+                            System.out.println("three");
+                            break;
+                        case 4:
+                            System.out.println("four");
+                            break;
+                        case 5:
+                            System.out.println("five");
+                            break;
+                        case 6:
+                            System.out.println("six");
+                            break;
+                        case 7:
+                            System.out.println("seven");
+                            break;
+                        case 8:
+                            System.out.println("eight");
+                            break;
+                        case 9:
+                            System.out.println("nine");
+                            break;
+                    }
+                }
+            }
+
+            if (number > 10 && number < 20) {
+                switch (number3) {
+                    case 1:
+                        System.out.println("eleven");
+                        break;
+                    case 2:
+                        System.out.println("twelve");
+                        break;
+                    case 3:
+                        System.out.println("thirteen");
+                        break;
+                    case 4:
+                        System.out.println("fourteen");
+                        break;
+                    case 5:
+                        System.out.println("fifteen");
+                        break;
+                    case 6:
+                        System.out.println("sixteen");
+                        break;
+                    case 7:
+                        System.out.println("seventeen");
+                        break;
+                    case 8:
+                        System.out.println("eighteen");
+                        break;
+                    case 9:
+                        System.out.println("nineteen");
+                        break;
+                }
             }
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

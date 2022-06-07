@@ -12,6 +12,6 @@ public class Menu {
         System.out.println("3. Draw the rectangle");
         System.out.println("0 . Exit ");
         choice = input.nextInt();
-        
+
     }
 }
