@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 public class ChangeMoney {
     public static void main(String[] args) {
-        float vnd ;
+        double vnd ;
         vnd =23000;
-        float usd;
+        double usd;
         double money;
         System.out.println("Enter USD :");
-        Scanner scanner = new Scanner(System.in);
-        usd = Float.parseFloat(scanner.nextLine());
+        Scanner sc = new Scanner(System.in);
+        usd = Double.parseDouble(sc.nextLine());
         money = usd * vnd;
         System.out.println("Money is :" + money + " VND ");
     }
