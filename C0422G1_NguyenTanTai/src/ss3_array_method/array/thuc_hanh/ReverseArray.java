@@ -16,5 +16,11 @@ public class ReverseArray {
         }
         System.out.println("Initial array :");
         System.out.println(Arrays.toString(array));
+        for (int i = 0; i < array.length/2; i++) {
+            int a =array[i];
+            array[i] = array[array.length-1 - i];
+            array[array.length-1 - i] = a;
+        }
+        System.out.println(Arrays.toString(array));
     }
 }
