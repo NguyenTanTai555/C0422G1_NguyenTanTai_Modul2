@@ -1,11 +1,11 @@
 package ss3_array_method.array.bai_tap;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class SumArray {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        //
         int count =1 ;
         do {
             System.out.println("Enter length array father:");
