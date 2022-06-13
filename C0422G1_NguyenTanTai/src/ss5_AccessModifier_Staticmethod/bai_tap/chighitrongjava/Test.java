@@ -1,4 +1,6 @@
-package ss5_AccessModifier_Staticmethod.bai_tap;
+package ss5_AccessModifier_Staticmethod.bai_tap.chighitrongjava;
+
+import ss5_AccessModifier_Staticmethod.bai_tap.chighitrongjava.Student;
 
 public class Test {
     public static void main(String[] args) {

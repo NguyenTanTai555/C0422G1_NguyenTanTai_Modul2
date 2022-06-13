@@ -1,4 +1,4 @@
-package ss5_AccessModifier_Staticmethod.bai_tap;
+package ss5_AccessModifier_Staticmethod.bai_tap.chighitrongjava;
 
 public class Student {
     private String name = "john" ;
