@@ -1,7 +1,6 @@
 package ss4_class_object.thuc_hanh;
 
-import java.lang.ref.SoftReference;
-import java.util.Scanner;
+
 
 public class Adidas {
     private String name ;
@@ -14,16 +13,6 @@ public class Adidas {
 
     public Adidas() {
     }
-
-//    public Adidas(double price, double color, double form, double amountSold, String category) {
-//        this.price = price;
-//        this.color = color;
-//        this.form = form;
-//        this.amountSold = amountSold;
-//        this.category = category;
-//    }
-
-
     public String getName() {
         return name;
     }
@@ -48,9 +37,9 @@ public class Adidas {
         this.price = price;
     }
 
-//    public String getColor() {
-//        return color;
-//    }
+    public String getColor() {
+        return color;
+    }
 
     public void setColor(String color) {
         this.color = color;
@@ -84,9 +73,14 @@ public class Adidas {
         Adidas adidas = new Adidas();
         adidas.setName("Jordan 11");
         adidas.setColor("White");
-        System.out.println(adidas.color + "\n" + adidas.getName());
-
-
+        adidas.setSize(7.5);
+        adidas.setPrice(5300000);
+        adidas.setCategory("NBA Shoes");
+        adidas.setAmountSold(200000);
+        adidas.setForm("Chunky");
+        System.out.println("Color : "+adidas.getColor() + "\n" +"Name Shoes :"+ adidas.getName());
+        System.out.println("Size : "+adidas.getSize() + "\n" +"Price :" + adidas.getPrice());
+        System.out.println("Category : "+adidas.getCategory() + "\n" +"quantity sold : " + adidas.getAmountSold()+"\n"+"Form :" + adidas.getForm());
     }
 }
 
