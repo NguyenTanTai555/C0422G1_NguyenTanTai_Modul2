@@ -40,9 +40,9 @@ public class Rectangle extends Shape {
     @Override
     public String toString(){
         return "A Rectangle with width=" +
-                getArea() +
+                getArea() + "\n" +
                 "and length " +
-                getLength() +
+                getLength() + "\n" +
                 "which is a subclass of " + super.toString();
 
     }

@@ -30,7 +30,7 @@ public class Circle extends Shape {
     @Override
     public String toString(){
         return "A circle with radius  = "+
-                getRadius() +
+                getRadius() +"\n" +
                 "which is a subclass of"+
                 super.toString();
     }

@@ -28,7 +28,7 @@ public class Shape {
     }
     @Override
     public String toString(){
-        return "A shape with color "+
-                getColor()+ "and " + (isFilled()?"filled" : "not filled");
+        return "A shape with color "+"\n"+
+                getColor()+ "\n" + "and "+ (isFilled()?"filled" : "not filled");
     }
 }
