@@ -1,8 +1,6 @@
-package ss6_Inheritance.thuc_hanh;
+package ss7_Abtract_interface.bai_tap.interface_Resizeable;
 
-import ss7_Abtract_interface.bai_tap.interface_Resizeable.Resizeable;
-
-public class Circle extends Shape implements Resizeable {
+public class Circle extends Shape implements Resizeable{
     private double radius = 1.0;
 
     public Circle() {
@@ -39,6 +37,11 @@ public class Circle extends Shape implements Resizeable {
 
     @Override
     public void resize(double percent) {
-        setRadius(getRadius() + getRadius()*percent/100);
+        this.setRadius(this.getRadius() + (1+(percent/100)));
+    }
+
+    @Override
+    public void howToColor() {
+
     }
 }
