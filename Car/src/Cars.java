@@ -1,6 +1,8 @@
+import java.util.Scanner;
+
 public class Cars extends Vehicle {
-    public int numberOfSeats;
-    public String vehicleType;
+    private int numberOfSeats;
+    private String vehicleType;
 
     public Cars(){}
 
@@ -15,7 +17,6 @@ public class Cars extends Vehicle {
         this.numberOfSeats = numberOfSeats;
         this.vehicleType = vehicleType;
     }
-
     @Override
     public String toString() {
         return  "Cars" +super.toString()+
@@ -23,10 +24,4 @@ public class Cars extends Vehicle {
                 + "\nvehicleType :'" + vehicleType +"\n"
                 ;
     }
-
-    @Override
-    void gotoBy() {
-        System.out.println(" 4 wheel engine ");
-    }
-
 }

@@ -1,10 +1,10 @@
 public class MotoCycle extends Vehicle {
-    public int wattage ;
+    private int wattage ;
     public MotoCycle(){
     }
 
-    public MotoCycle(int id ,String nameOfCar ,int yearOfManufacture ,String Owner ,int wattage){
-        super(id,nameOfCar,yearOfManufacture,Owner);
+    public MotoCycle(int id ,String nameOfCar ,int yearOfManufacture ,String owner ,int wattage){
+        super(id,nameOfCar,yearOfManufacture,owner);
         this.wattage=wattage;
 
     }
@@ -16,8 +16,4 @@ public class MotoCycle extends Vehicle {
                 "\n";
     }
 
-    @Override
-    void gotoBy(){
-        System.out.println("2 wheel engine");
-    }
 }

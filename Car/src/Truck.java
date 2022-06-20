@@ -1,5 +1,5 @@
 public class Truck extends Vehicle {
-    public double grossTon;
+    private double grossTon;
     public Truck(){
 
     }
@@ -15,8 +15,5 @@ public class Truck extends Vehicle {
                 "\ngrossTon :" + grossTon +"\n";
     }
 
-    @Override
-    void gotoBy(){
-        System.out.println("4 wheel engine");
-    }
+
 }

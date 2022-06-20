@@ -2,7 +2,7 @@ public abstract class Vehicle {
     public int id;
     public String nameOfCar ;
     public int yearOfManufacture;
-    public String Owner;
+    public String owner;
     public Vehicle(){
     }
 
@@ -10,7 +10,7 @@ public abstract class Vehicle {
         this.id = id;
         this.nameOfCar = nameOfCar;
         this.yearOfManufacture = yearOfManufacture;
-        Owner = owner;
+        this.owner = owner;
     }
 
     public double getId() {
@@ -38,22 +38,18 @@ public abstract class Vehicle {
     }
 
     public String getOwner() {
-        return Owner;
+        return owner;
     }
 
     public void setOwner(String owner) {
-        Owner = owner;
+        owner = owner;
     }
     @Override
     public String toString() {
         return "\nid :" + id
                 + "\nnameOfCar : '" + nameOfCar
                 + "\nyear  :" + yearOfManufacture
-                + "\nOwner :'" + Owner;
+                + "\nOwner :'" + owner;
     }
-    void add(){
-
-    }
-
-    abstract void gotoBy();
 }
+
