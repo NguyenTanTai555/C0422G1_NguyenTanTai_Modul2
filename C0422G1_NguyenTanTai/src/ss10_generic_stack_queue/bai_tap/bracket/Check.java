@@ -1,4 +1,4 @@
-package ss10_generic_stack_queue.bai_tap.ngoac;
+package ss10_generic_stack_queue.bai_tap.bracket;
 
 import java.util.Scanner;
 import java.util.Stack;
