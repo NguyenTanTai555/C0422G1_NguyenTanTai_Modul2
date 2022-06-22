@@ -1,4 +1,4 @@
-package ss11_tree_map.thuc_hanh;
+package ss12_tree_map.thuc_hanh;
 
 
 import ss5_AccessModifier_Staticmethod.student_manager.Student;

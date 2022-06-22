@@ -1,4 +1,4 @@
-package ss11_tree_map.bai_tap.baitap1;
+package ss12_tree_map.bai_tap.baitap1.model;
 
 public class Product implements Comparable<Product>{
     private int id ;

@@ -1,10 +1,13 @@
-package ss11_tree_map.bai_tap.baitap1;
+package ss12_tree_map.bai_tap.baitap1.Service;
+import ss12_tree_map.bai_tap.baitap1.util.DecreasePrice;
+import ss12_tree_map.bai_tap.baitap1.model.Product;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 import java.util.List;
 
-public class Method {
+public class Service {
     static List<Product> products = new ArrayList<>();
 
     static {
