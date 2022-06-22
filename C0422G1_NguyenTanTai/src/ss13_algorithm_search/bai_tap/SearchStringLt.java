@@ -1,10 +1,9 @@
 package ss13_algorithm_search.bai_tap;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Scanner;
 
-public class Search {
+public class SearchStringLt {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter String");
@@ -16,6 +15,8 @@ public class Search {
             for (int j = i + 1; j < string.length(); j++) {
                 if (string.charAt(j) > list.getLast()) {
                     list.add(string.charAt(j));
+                } else {
+                    break;
                 }
             }
             if (list.size() > max.size()) {
@@ -29,4 +30,3 @@ public class Search {
         }
     }
 }
-
