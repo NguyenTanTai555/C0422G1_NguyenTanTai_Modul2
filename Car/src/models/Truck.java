@@ -1,3 +1,7 @@
+package models;
+
+import models.Vehicle;
+
 public class Truck extends Vehicle {
     private double grossTon;
     public Truck(){
@@ -11,7 +15,7 @@ public class Truck extends Vehicle {
 
     @Override
     public String toString() {
-        return "Truck"+ super.toString()+
+        return "models.Truck"+ super.toString()+
                 "\ngrossTon :" + grossTon +"\n";
     }
 

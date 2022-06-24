@@ -1,4 +1,7 @@
-import com.sun.deploy.net.MessageHeader;
+import models.Cars;
+import models.MotoCycle;
+import models.Truck;
+import models.Vehicle;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -7,7 +10,6 @@ public class ManagerVehicle {
     public static void main(String[] args) {
         int check;
          ArrayList<Vehicle> vehicles = new ArrayList<>();
-
          {
             vehicles.add(new Cars(5555, "MerE200", 1999, "Mercedes", 4, "4 wheel"));
             vehicles.add(new MotoCycle(7777, "Dream", 1995, "Honda", 110));

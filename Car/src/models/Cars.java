@@ -1,4 +1,6 @@
-import java.util.Scanner;
+package models;
+
+import models.Vehicle;
 
 public class Cars extends Vehicle {
     private int numberOfSeats;
@@ -19,7 +21,7 @@ public class Cars extends Vehicle {
     }
     @Override
     public String toString() {
-        return  "Cars" +super.toString()+
+        return  "models.Cars" +super.toString()+
                 "\nnumberOfSeats :" + numberOfSeats
                 + "\nvehicleType :'" + vehicleType +"\n"
                 ;

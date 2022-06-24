@@ -1,3 +1,8 @@
+import models.Cars;
+import models.MotoCycle;
+import models.Truck;
+import models.Vehicle;
+
 import java.util.Arrays;
 
 public class TestVehicle {

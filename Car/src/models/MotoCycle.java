@@ -1,3 +1,7 @@
+package models;
+
+import models.Vehicle;
+
 public class MotoCycle extends Vehicle {
     private int wattage ;
     public MotoCycle(){
@@ -11,7 +15,7 @@ public class MotoCycle extends Vehicle {
 
     @Override
     public String toString() {
-        return "MotoCycle" +super.toString()+
+        return "models.MotoCycle" +super.toString()+
                 "\nwattage :" + wattage +
                 "\n";
     }

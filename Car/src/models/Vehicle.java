@@ -1,3 +1,5 @@
+package models;
+
 public abstract class Vehicle {
     public int id;
     public String nameOfCar ;

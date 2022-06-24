@@ -1,3 +1,5 @@
+import models.Vehicle;
+
 import java.util.Scanner;
 
 public class Run {
@@ -6,7 +8,7 @@ public class Run {
         int check ;
         Scanner input = new Scanner(System.in);
         do{
-                System.out.println("Vehicle management program :" + "\n"
+                System.out.println("models.Vehicle management program :" + "\n"
                         + "1.ADD new vehicle :" + "\n"
                         + "2.DISPLAY vehicle :" + "\n"
                         + "3.DELETE vehicle :" + "\n"
@@ -19,8 +21,8 @@ public class Run {
                     case 1:
                         System.out.println("Enter number :");
                         System.out.println("1. ADD NEW CAR" + "\n"
-                                + "2. ADD NEW Truck" + "\n"
-                                + "3. ADD NEW MotoCycle" + "\n");
+                                + "2. ADD NEW models.Truck" + "\n"
+                                + "3. ADD NEW models.MotoCycle" + "\n");
                         int add = Integer.parseInt(scanner.nextLine());
                         if (add == 1) {
                             ManagerVehicle.addCar();
@@ -33,7 +35,7 @@ public class Run {
                         }
                         break;
                     case 2:
-                        for () {
+                        for (int s :) {
                             System.out.println(s);
                         }
                         break;
