@@ -1,7 +1,7 @@
 package ss15.thuc_hanh;
 
 public class Task {
-    public class X {
+    public static class X {
         public static void main(String [] args)     {
             try {
                 badMethod();
