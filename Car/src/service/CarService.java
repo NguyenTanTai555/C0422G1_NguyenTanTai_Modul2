@@ -1,4 +1,2 @@
-package service;
-
-public interface CarService {
+package service;public class CarService {
 }

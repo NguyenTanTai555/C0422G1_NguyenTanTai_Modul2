@@ -1,4 +1,2 @@
-package service;
-
-public class MotoCycleService {
+package service;public class MotoCycleService {
 }
