@@ -1,6 +1,6 @@
 package sevice;
 
-public interface IEmployee extends ServicePerson{
+public interface ImplEmployee extends ServicePerson{
     @Override
     default void add() {
 
